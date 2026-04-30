@@ -1,3 +1,6 @@
+
+set LANG=zh_CN.UTF-8
+
 call node -v
 if %errorlevel% neq 0 (
     echo 错误：没有安装 Node.js
