@@ -22,9 +22,11 @@ nav:
 menu:
   # 导航菜单示例格式：
    首页: / || fas fa-home
+   友情链接: /link || fas fa-link
    分类列表||fas fa-list:
      音乐: /music/ || fas fa-music
      电影: /movies/ || fas fa-video
+     游戏: /game/ || fas fa-gamepad
 
 # --------------------------------------
 # 代码块设置
@@ -48,9 +50,11 @@ code_blocks:
 # 格式：
 #   图标类名: 链接 || 描述文本 || 颜色值
 social:
+  # https://www.runoob.com/font-awesome/fontawesome-icons-webapp.html
   # 示例：
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-    fas fa-envelope: https://lionxiu@qq.com || 邮箱 || '#4a7dbe'
+    fas fa-envelope: mailto:lionxiu@qq.com || 邮箱 || '#4a7dbe'
+    fab fa-qq: mailto:lionxiu@qq.com || QQ || '#74c1fcff'
+    fab fa-weixin: mailto:lionxiu@qq.com || 微信 || '#19a87dff'
 
 # --------------------------------------
 # 图片设置
@@ -149,10 +153,10 @@ subtitle:
   # 第三方接口数据源（仅中文）
   # 优先级：先显示接口内容，再显示 sub 配置的内容
   # 可选值：false（禁用）/ 1（一言网 hitokoto.cn）/ 2（aa1.cn 一言）/ 3（今日诗词 jinrishici.com）
-  source: false
+  source: 1
   # 关闭打字机效果时，仅显示 sub 的第一行内容
   sub:
-   sssssss
+   
    
 
 # 首页文章布局
@@ -258,7 +262,7 @@ aside:
       enable: true # 是否启用
       icon: fab fa-github # 图标
       text: 关注我 # 按钮文本
-      link: https://github.com/xxxxxx # 链接
+      link: https://github.com/lionxiu # 链接
   card_announcement: # 公告卡片
     enable: true # 是否启用
     content: 这是我的个人博客 # 公告内容
