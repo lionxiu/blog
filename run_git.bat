@@ -22,7 +22,7 @@ echo 5/5 推送源码...
 git push
 
 echo ======================================
-echo  部署完成！线上按钮已正常！
-echo  访问地址：https://lionxiu.github.io/blog/
+echo  部署完成！
+echo  地址：https://lionxiu.github.io/blog/
 echo ======================================
 pause
