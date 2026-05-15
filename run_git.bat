@@ -1,24 +1,28 @@
 @echo off
 chcp 65001 >nul
 set LANG=zh_CN.UTF-8
+
 echo ======================================
 echo  Hexo 博客自动部署（已修复按钮不显示）
 echo ======================================
 
-echo 1/5 清理缓存...
+echo 1/6 清理缓存...
 call npx hexo clean
 
-echo 2/5 生成静态网页...
+echo 2/6 生成静态网页...
 call npx hexo generate
 
-echo 3/5 部署到 GitHub Pages（关键！）
+echo 3/6 添加 .nojekyll 文件（关键！）
+echo.> public\.nojekyll
+
+echo 4/6 部署到 GitHub Pages
 call npx hexo deploy
 
-echo 4/5 提交源码备份...
+echo 5/6 提交源码备份...
 git add .
 git commit -m "更新博客 %date% %time%"
 
-echo 5/5 推送源码...
+echo 6/6 推送源码...
 git push
 
 echo ======================================
