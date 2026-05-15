@@ -12,17 +12,14 @@ call npx hexo clean
 echo 2/6 生成静态网页...
 call npx hexo generate
 
-echo 3/6 添加 .nojekyll 文件（关键！）
-echo.> public\.nojekyll
-
-echo 4/6 部署到 GitHub Pages
+echo 3/6 部署到 GitHub Pages
 call npx hexo deploy
 
-echo 5/6 提交源码备份...
+echo 4/6 提交源码备份...
 git add .
 git commit -m "更新博客 %date% %time%"
 
-echo 6/6 推送源码...
+echo 5/6 推送源码...
 git push
 
 echo ======================================
