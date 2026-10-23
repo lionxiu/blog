@@ -37,7 +37,7 @@ code_blocks:
   theme: light
   macStyle: false # 是否启用 Mac 风格窗口样式
   height_limit: false # 代码块高度限制（单位：px），false 表示无限制
-  word_wrap: false # 是否自动换行
+  word_wrap: true # 是否自动换行
 
   # 工具栏设置
   copy: true # 是否显示复制按钮
@@ -874,7 +874,7 @@ CDN:
   # 可选值：local/jsdelivr/unpkg/cdnjs/custom
   # 注意：开发版内置脚本仅支持 local；第三方脚本设为 local 需安装 hexo-butterfly-extjs
   internal_provider: local # 内置脚本
-  third_party_provider: jsdelivr # 第三方脚本
+  third_party_provider: local # 第三方脚本
 
   version: true # 是否添加版本号
 
